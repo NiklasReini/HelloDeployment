@@ -1,0 +1,20 @@
+<!DOCTYPEhtml>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>ServerProgramming</title>
+</head>
+<body>
+<table>
+<tr th:each="message : ${messages}">
+		<td th:text="${message.id}">1</td>
+		<td th:text="${message.title}">Title ...</td>
+		<td th:text="${message.text}">Text ...</td>
+	</tr>
+</table>
+	
+	
+	
+	
+</body>
+</html>

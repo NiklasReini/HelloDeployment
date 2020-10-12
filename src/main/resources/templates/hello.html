@@ -1,0 +1,16 @@
+<!DOCTYPEhtml>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:gt="http://www.thymeleaf.org">
+<head>
+<title>ServerProgramming</title>
+</head>
+<body>
+	<div th:if="${age &gt; 17}">
+		<p th:text="'Welcome ' + ${name}  + '!' " />
+	</div>
+	<div th:unless="${age &gt; 17}">
+		<p th:text="'You are too young ' + '!' " />	
+	</div>	
+</body>
+</html>
